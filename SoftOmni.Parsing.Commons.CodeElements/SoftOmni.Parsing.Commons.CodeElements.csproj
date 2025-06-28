@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="SoftOmni.Parsing.Commons.ParsingResults" Version="0.2.45" />
+      <PackageReference Include="SoftOmni.Parsing.Commons.SegmentedStrings" Version="0.0.3" />
+    </ItemGroup>
+
 </Project>

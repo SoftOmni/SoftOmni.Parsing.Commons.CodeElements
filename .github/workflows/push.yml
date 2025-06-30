@@ -52,6 +52,9 @@ jobs:
   
   test:
     needs: [ generate-test-matrix ]
+    permissions:
+      checks: write
+      contents: read
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -145,7 +148,6 @@ jobs:
           name: .NET Tests (${{ matrix.dotnet_version }})
           path: "test_results/${{ matrix.dotnet_version }}/*.trx"
           reporter: dotnet-trx
-          token: '${{ secrets.TOKEN_GITHUB }}'
 
   upload:
     needs: test

@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using SoftOmni.Parsing.Commons.CodeElements.Exceptions;
+using SoftOmni.Parsing.Commons.Formatting.Parameters;
 using SoftOmni.Parsing.Commons.ParsingResults;
 using SoftOmni.Parsing.Commons.SegmentedStrings;
 
@@ -13,7 +14,7 @@ public abstract class CodeElement
 
     public abstract Func<IStringBuilder, ParsingResult> Validator { get; }
 
-    public virtual Action<IStringBuilder, FormattableParameters> Formatter { get; } = (code, parameters) => { }; 
+    public virtual Action<IStringBuilder, ReadOnlyFormattingParameters> Formatter { get; } = (code, parameters) => { }; 
 
     protected List<CodeElement> Children { get; }
 

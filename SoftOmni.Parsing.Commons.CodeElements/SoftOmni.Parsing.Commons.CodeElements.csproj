@@ -1,10 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>SoftOmni.Parsing.Commons.CodeElements</RootNamespace>
+        
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageId>SoftOmni.Parsing.Commons.CodeElements</PackageId>
+        <Version>0.5.1</Version>
+        
+        <Description>
+            A C# library for expressing syntax trees
+        </Description>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../README.md" Pack="true" PackagePath="/"/>
+    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="SoftOmni.Parsing.Commons.Formatting" Version="0.0.10" />

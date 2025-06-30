@@ -8,7 +8,7 @@ namespace SoftOmni.Parsing.Commons.CodeElements;
 
 public abstract class CodeElement
 {
-    protected readonly Guid Id = Guid.CreateVersion7();
+    protected readonly Guid Id = Guid.NewGuid();
 
     protected IStringBuilder UnderlyingCode { get; }
 

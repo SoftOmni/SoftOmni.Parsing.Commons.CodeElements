@@ -8,7 +8,7 @@
         
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageId>SoftOmni.Parsing.Commons.CodeElements</PackageId>
-        <Version>0.5.1</Version>
+        <Version>0.5.2</Version>
         
         <Description>
             A C# library for expressing syntax trees

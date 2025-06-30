@@ -145,6 +145,7 @@ jobs:
           name: .NET Tests (${{ matrix.dotnet_version }})
           path: "test_results/${{ matrix.dotnet_version }}/*.trx"
           reporter: dotnet-trx
+          token: '${{ secrets.TOKEN_GITHUB }}'
 
   upload:
     needs: test

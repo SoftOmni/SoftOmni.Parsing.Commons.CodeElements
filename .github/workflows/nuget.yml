@@ -72,7 +72,7 @@ jobs:
           NUGET_AUTH_TOKEN: ${{ secrets.SOFTOMNI_NUGET_KEY }}
 
       - name: Restore nuget packages
-        run: nuget restore
+        run: dotnet restore
 
       - name: Pack
         run: dotnet pack --configuration Release --no-build --output ./artifacts
